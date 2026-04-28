@@ -13,4 +13,8 @@ app.get('/', (_req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Flurr server running at http://localhost:${PORT}`);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 05008f4975b4d5b2b1c3d5abe325fff7bf9fac80
