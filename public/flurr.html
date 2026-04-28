@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flurr</title>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        te: {
+                            bg: '#e4e4e4',
+                            paper: '#f2f2f2',
+                            orange: '#ff4d00',
+                            dark: '#1a1a1a',
+                            border: '#888888',
+                            grid: '#d1d1d1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Space Mono', 'monospace'],
+                        pinyon: ['"Pinyon Script"', 'cursive'],
+                        playfair: ['"Playfair Display"', 'serif'],
+                        signature: ['"Great Vibes"', 'cursive']
+                    },
+                    boxShadow: {
+                        'hard': '4px 4px 0px 0px rgba(0,0,0,1)',
+                        'hard-sm': '2px 2px 0px 0px rgba(0,0,0,1)'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <link rel="stylesheet" href="./flurr.css?v=2">
+</head>
+<body class="h-screen flex flex-col overflow-hidden font-sans">
+
+    
+    <header class="h-[52px] bg-black text-white flex items-center justify-start px-4 border-b border-white z-50 shrink-0">
+        <img src="./assets/logo.png" alt="Logo" class="w-[100px] h-[50px] object-cover rounded-full">
+    </header>
+
+    
+    <div id="app" class="flex-1 w-full relative overflow-hidden flex bg-grid">
+       
+    </div>
+
+    <script src="./flurr.js?v=2"></script>
+</body>
+</html>
+
+
+
+
+
+
+
